@@ -8,7 +8,7 @@ from pathlib import Path
 import pkg_resources.py2_warn
 #import time
 
-initial_dir = 'C:\\'
+
 dir_text = 'Select a Folder or a File'
 image_formats = ["png", "jpg"]
 d_options = ["pdf"] + image_formats
@@ -17,14 +17,16 @@ global folder_name, file_name
 
 
 class ButtonSelect:
-    def __init__(self, initial_dir):
-        self.initial_dir = initial_dir
+    def __init__(self):
+        self.initial_dir = ''
+
 
     def select_folder(self):
         global folder_name, file_name
         folder_name = filedialog.askdirectory(initialdir=self.initial_dir,
                                               title="Select A Folder")
         file_name = None
+        self.initial_dir = folder_name
         return folder_name
 
     def select_file(self):
@@ -32,6 +34,7 @@ class ButtonSelect:
         file_name = filedialog.askopenfilename(initialdir=self.initial_dir,
                                                title="Select A File")
         folder_name = None
+        self.initial_dir = Path(file_name).parent
         return file_name
 
 
@@ -105,7 +108,7 @@ class PdfToolGui(ThemedTk):
         self.s = ttk.Style()
         self.s.configure("BSelect.TButton", font=('Helvetica', '12', 'bold'))
         self.s.configure("BConvert.TButton", font=('Helvetica', '14', 'bold'))
-        self.button_select = ButtonSelect(initial_dir)
+        self.button_select = ButtonSelect()
         self.b_select_folder()
         self.b_select_file()
         self.info_label(dir_text)
