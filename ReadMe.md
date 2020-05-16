@@ -11,8 +11,8 @@ this is my first attempt to create something meaningful also for others.
 
 ## How to use
 * PDF Split: select file --> pdf to pdf --> PDF Split --> convert:
-  ![](.\ScreenShots/PDFSplit.png)
-  ![](.\ScreenShots/PDFSplited.png)
+  ![](./ScreenShots/PDFSplit.png)
+  ![](.\ScreenShots\PDFSplited.png)
 
 * PDF Merge: select folder --> pdf to pdf --> PDF Merge --> convert:
   ![](.\ScreenShots/PDFMerge.png)
