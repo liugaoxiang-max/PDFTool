@@ -12,19 +12,19 @@ this is my first attempt to create something meaningful also for others.
 ## How to use
 * PDF Split: select file --> pdf to pdf --> PDF Split --> convert:
   ![](./ScreenShots/PDFSplit.png)
-  ![](.\ScreenShots\PDFSplited.png)
+  ![](./ScreenShots/PDFSplited.png)
 
 * PDF Merge: select folder --> pdf to pdf --> PDF Merge --> convert:
-  ![](.\ScreenShots/PDFMerge.png)
-  ![](.\ScreenShots/PDFMerged.png)
+  ![](./ScreenShots/PDFMerge.png)
+  ![](./ScreenShots/PDFMerged.png)
 
 * Image to PDF: select folder/file --> jpg/png to pdf --> convert:
-  ![](.\ScreenShots/JpgToPDF.png)
-  ![](.\ScreenShots/JpgToPDFFinished.png)
+  ![](./ScreenShots/JpgToPDF.png)
+  ![](./ScreenShots/JpgToPDFFinished.png)
 
 * PDF to Image: select folder/file --> pdf to jpg/png --> convert:
-  ![](.\ScreenShots/PDFToJpg.png)
-  ![](.\ScreenShots/PDFToJpgFinished.png)
+  ![](./ScreenShots/PDFToJpg.png)
+  ![](./ScreenShots/PDFToJpgFinished.png)
 
 Max Liu <max.liu@outlook.com>
 2020.05.16
